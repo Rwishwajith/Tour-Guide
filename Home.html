@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Flamenco" rel="stylesheet">
+    <link rel="stylesheet"
+        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tour Guide</title>
+    <link rel="icon" type="image/ico" href="flight.png">
+</head>
+<style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color:white; 
+    font-family: 'Flamenco', cursive; 
+}
+header{
+    background:linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.6)),url("https://hdqwalls.com/wallpapers/travel-hd.jpg") no-repeat;
+    background-size:cover;
+    height:100vh;
+    background-position: center;
+  
+}
+
+
+.row{
+    max-width: 1180px;
+    margin:0 auto;
+}
+.logo{
+    height:80px;
+    width:auto;
+    float:left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    margin-top:60px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left:40px;
+}
+.main-nav li a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    padding:50x 0;
+}
+.main-nav li a:hover{
+    border-bottom: 1px solid #bf55ec;
+    border-width: 3px;
+}
+
+.main-content-header{
+    width:1180px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom:20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: transparent;
+    color:#bf55ec;
+    margin-right: 15px;
+    border:1px solid #bf55ec;
+}
+.btn-full:hover{
+    background-color: #fff;
+}
+.btn-nav{
+    background-color: transparent;
+    color:white;
+    border: 1px solid #fff;
+}
+.btn-nav:hover{
+    background: #bf55ec;
+}
+
+
+.mobile-icon{
+    display:none;
+}
+
+/* Responsive  */
+
+@media only screen and (max-width:1180px){
+    .main-content-header{
+        width:100%;
+        padding:0 2%;
+
+    }
+    .main-nav{
+        margin-right:10px;
+    }
+  .logo{
+        padding:0 2%;
+    }
+}
+@media only screen and (max-width:990px){
+    h1{ font-size: 200%;}
+}
+@media only screen and (max-width:768px){
+    h1{font-size:180%;
+  }
+  body{
+    font-size:18px;
+  }
+    .main-nav{display:none;
+            float: left;
+    }
+    .mobile-icon{
+        display: inline-block;
+        color:#fff;
+        float:right;
+        font-size: 200%;
+        position:relative;
+        top:40px;
+        left:-40px;
+
+    }
+    .main-nav li{
+        display: block;
+        margin-top:10px;
+        
+    }
+}
+
+@media only screen and (max-width:480px){
+    .btn-nav{
+        margin-top: 20px
+    }
+    h1{
+        font-size: 150%;
+      margin-top:30px;
+
+    }
+    .logo{
+        height:60px;
+    }
+    .mobile-icon{
+        font-size:100%;
+    }
+    body{
+        text-align: center;
+      font-size:16px;
+    }
+    .main-content-header{
+        text-align: center;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="flight.png" alt="header image" class="logo">
+                <ul class="main-nav animated slideInDown" id="slide">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="city.html">Select A Location</a></li>
+               
+  
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header animated zoomIn">
+            <h1>Welcome to <span class="effect"> Tour Guide </i> </span> <br>
+                We make you travel the world
+            </h1>
+            <a href="City.html" class="btn btn-full">Click to Find Your Desired Location</a>
+           
+        </div>
+    </header>
+    
+    </script>
+</body>
+</html>
